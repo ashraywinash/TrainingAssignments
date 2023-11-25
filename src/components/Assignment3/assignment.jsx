@@ -21,11 +21,13 @@ const Assignment3 = () => {
     
 
     return (
-        <div>
-            <h1 className="text-center bg-black text-white m-1">Assignment 3</h1>
+        <div className="h-screen w-screen">
+            <h1 className="text-center bg-black text-white text-2xl">End of assignment 2</h1>
+            <hr></hr>
+            <h1 className="text-center bg-black text-white text-2xl">Assignment 3</h1>
             <h1 className="text-center p-3 font-bold">User Count : {count}</h1>
             <Userlist usersList={userList} countUpdate={countUpdate}/>
-            <h1 className="text-center bg-black text-white m-1">End of Assignment 3</h1>
+            <h1 className="text-center bg-black text-white m-1 text-2xl">End of Assignment 3</h1>
         </div>
     )
 }

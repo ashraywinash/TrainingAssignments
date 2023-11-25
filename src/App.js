@@ -10,11 +10,8 @@ function App() {
   return (
     <div>
       <Assignment1 />
-      <hr></hr>
       <Assignment2 />
-      <hr></hr>
       <Assignment3 />
-      <hr></hr>
       <Assignment4 />
     </div>
   );

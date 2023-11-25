@@ -52,12 +52,12 @@ const listOfusers = [
 
 const Assignment1 = () =>{
     return (
-        <div>
-            <h1 className="text-center bg-black text-white">Assignment 1</h1>
+        <div className="h-screen">
+            <h1 className="text-center bg-black text-white text-2xl">Assignment 1</h1>
             <Navbar />
             <UserList listOfUsers={listOfusers}/>
             <Footer />
-            <h1 className="text-center bg-black text-white">End of Assignment 1</h1>
+            <h1 className="text-center bg-black text-white text-2xl">End of Assignment 1</h1>
         </div>
     )
 }

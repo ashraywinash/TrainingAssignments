@@ -2,7 +2,7 @@ import React from "react";
 
 const SmallUser = (props) =>{
     return (
-        <div className="min-w-fit border-solid border-4 border-black p-3">
+        <div className="w-1/4 h-44 border-solid border-4 border-black p-3">
             <h2>{props.user.name}</h2>
             <h2>{props.user.username}</h2>
             <h2>{props.user.email}</h2>
