@@ -8,7 +8,7 @@ import Assignment4 from "./components/Assignment4/assignment";
 
 function App() {
   return (
-    <div className="w-screen ">
+    <div className="w-screen overflow-hidden">
       <Assignment1 />
       <Assignment2 />
       <Assignment3 />
