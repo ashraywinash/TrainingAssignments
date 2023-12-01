@@ -14,9 +14,9 @@ const FormComponent = () => {
     }
 
   return (
-    <div className='w-screen h-screen font-mono mt-[25%]'>
+    <div className='w-screen h-screen font-mono mt-[5%]'>
         
-        <form action="/" className='flex-col flex gap-4 w-3/5 m-auto border-black border-solid border-2 p-5' onSubmit={handleSubmit(onSubmitButtonClick)}>
+        <form action="/" className='flex-col flex gap-4 w-3/5 m-auto border-black border-solid border-2 p-5 shadow-2xl' onSubmit={handleSubmit(onSubmitButtonClick)}>
             <TextType text="SignUp Form"/>
             
             <div className='flex gap-4 p-3 text-xl items-center ml-[25%] relative'>

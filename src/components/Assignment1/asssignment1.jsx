@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../navbar/navbar";
 import Footer from "../Footer/footer";
 import UserList from "../UsersList/usersList";
+import RootLayout from "../RootLayout/RootLayout";
 
 const listOfusers = [
     {
@@ -52,13 +53,13 @@ const listOfusers = [
 
 const Assignment1 = () =>{
     return (
-        <div className="min-h-screen min-w-full">
-            <h1 className="text-center bg-black text-white text-2xl">Assignment 1</h1>
-            <Navbar />
-            <UserList listOfUsers={listOfusers}/>
-            <Footer />
-            <h1 className="text-center bg-black text-white text-2xl">End of Assignment 1</h1>
-        </div>
+      <div className="min-h-screen min-w-full">
+        <RootLayout />
+
+        <Navbar />
+        <UserList listOfUsers={listOfusers}/>
+        <Footer />
+      </div>
     )
 }
 

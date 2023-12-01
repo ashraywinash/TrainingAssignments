@@ -22,7 +22,7 @@ const Parent = () => {
 
 
     return (
-        <div className="bg-orange-200 min-w-max min-h-max p-5 rounded-md shadow-lg">
+        <div className="bg-orange-200 min-w-max min-h-max p-14 rounded-md shadow-2xl text-3xl">
 
             <h1 className="h-5 text-center font-bold">Counter : {counter}</h1>
             <Child increaseValue={increaseValueOfCounter} decreaseValue={decreaseValueOfCounter}/>

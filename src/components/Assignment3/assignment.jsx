@@ -1,6 +1,6 @@
 import React from "react";
 import Userlist from "../userList/userList";
-
+import RootLayout from "../RootLayout/RootLayout";
 import {useEffect,useState} from 'react'
 
 const Assignment3 = () => {
@@ -22,11 +22,11 @@ const Assignment3 = () => {
 
     return (
         <div className="min-h-screen w-screen">
-            
-            <h1 className="text-center bg-black text-white text-2xl">Assignment 3</h1>
-            <h1 className="text-center p-3 font-bold">User Count : {count}</h1>
+            <RootLayout />
+
+            <h1 className="text-center p-3 font-bold text-2xl">User Count : {count}</h1>
             <Userlist usersList={userList} countUpdate={countUpdate}/>
-            <h1 className="text-center bg-black text-white m-1 text-2xl">End of Assignment 3</h1>
+
         </div>
     )
 }
