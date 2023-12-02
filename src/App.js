@@ -5,6 +5,7 @@ import Assignment1 from "./components/Assignment1/asssignment1";
 import Assignment2 from "./components/Assignment2/assignment";
 import Assignment3 from "./components/Assignment3/assignment";
 import Assignment4 from "./components/Assignment4/assignment";
+import Assignment5 from "./components/Assignment5/assignment";
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
     {
       path:'/TrainingAssignments/Assignment4',
       element:<Assignment4 />
+    },
+    {
+      path:'/TrainingAssignments/Assignment5',
+      element:<Assignment5 />
     }
   ])
 
