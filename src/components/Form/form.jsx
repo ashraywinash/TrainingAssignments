@@ -23,22 +23,22 @@ const FormComponent = () => {
                 {errors.nameFeild?.type === 'required' && (<h3 className='absolute -top-2 -left-2 text-red-700'>*required</h3>)}
                 {errors.nameFeild?.type === 'maxLength' && (<h3 className='absolute -top-2 -left-2 text-red-700'>*8-12 chars</h3>)}
                 {errors.nameFeild?.type === 'minLength' && (<h3 className='absolute -top-2 -left-2 text-red-700'>*8-12 chars</h3>)}
-                <label className='font-bold' htmlFor="nameFeild">Enter Your Name:</label>
+                <label className='font-bold' htmlFor="nameFeild">enter your name:</label>
                 <input className='p-3 focus:outline-none border-b-2 pb-0 focus:border-black' type="text" id="nameFeild" placeholder='name' {...register("nameFeild",
                 {required:true,minLength:8,maxLength:12})}/>
             </div>
             
             <div className="flex gap-4 p-3 text-xl items-center ml-[25%] relative">
                 {errors.birthday?.type === 'required' && (<h3 className='absolute -top-2 -left-2 text-red-700'>*required</h3>)} 
-                <label className='font-bold' htmlFor="birthday">Birthday:</label>
+                <label className='font-bold' htmlFor="birthday">birthday:</label>
                 <input className='p-3' type="date" id="birthday" {...register("birthday",{required:true})}/>
             </div>
             
             <div className="flex gap-4 p-3 text-xl items-center ml-[25%] relative">
                 {errors.gender && (<h3 className='absolute -top-4 -left-2 text-red-700'>*required</h3>)}
-                <label className='font-bold' htmlFor="">Gender:</label>
+                <label className='font-bold' htmlFor="">gender:</label>
                 <input className='p-3' type="radio" id="gender" name='gender' value="male" {...register("gender",{required:true})}/>
-                <label className='' htmlFor="gender">Male</label>
+                <label className='' htmlFor="gender">male</label>
                 <input className='p-3' type="radio" id="gender" name='gender' value="female" {...register("gender",{required:true})}/>
                 <label htmlFor="gender">Female</label>
             </div>
@@ -59,7 +59,7 @@ const FormComponent = () => {
             </div>
             <div className="flex gap-4 p-3 text-xl items-center ml-[25%] relative">
                 {errors.subjectFeild?.type === 'required' && (<h3 className='absolute -top-4 -left-2 text-red-700'>*required</h3>)}
-                <label className='font-bold' htmlFor="subjectFeild">Subject:</label>
+                <label className='font-bold' htmlFor="subjectFeild">subject:</label>
                 <select className='focus:outline-none border-b-2' id="subjectFeild" {...register("subjectFeild",{required:true})}>
                     <option value="" disabled>Choose a subject</option>
                     <option value="JAVA">JAVA</option>
